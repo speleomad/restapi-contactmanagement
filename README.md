@@ -6,7 +6,7 @@ Backend Contact Management App is a Spring Boot application for managing contact
 
 ## Usage
   
-The application will be accessible at `http://localhost:8080`.
+The application will be accessible at `http://localhost:8085`.
 
 ## Dependencies
 
