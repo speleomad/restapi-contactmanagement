@@ -8,9 +8,10 @@ public class CorsConfig  implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings( CorsRegistry registry) {
-        registry.addMapping("/**")
-            .allowedOrigins("http://localhost:4200")
-            .allowedMethods("GET", "POST", "PUT", "DELETE","PATCH", "OPTIONS")
-            .allowedHeaders("*");
+     registry.addMapping("/**") // Apply CORS configuration to all endpoints
+     .allowedOrigins("http://localhost:4200") // Allow requests from the specified origin
+     .allowedMethods("GET", "POST", "PUT", "DELETE","PATCH", "OPTIONS")// Allow specified HTTP methods
+     .allowedHeaders("*");// Allow all headers
     }
 }
+
